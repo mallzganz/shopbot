@@ -408,8 +408,8 @@ switch (command) {
 case 'st':
 case 'store':
                list = []
-               listmenu = [`formulir`,`ff`,`ml`,`ucpubg`,`cod`,`sausageman`,`jasjok`,`berber`,`payment`]
-               listmenuu = [`Formulir Pemesanan`,`Free Fire`,`Mobile Legends`,`PUBG`,`CODM`,`SASAUGEMAN`,`JASA JOKI KONTAK`,`BER-BER`,`PAYMENT`]
+               listmenu = [`formulir`,`jasjok`,`payment`]
+               listmenuu = [`Formulir Pemesanan`,`JASA JOKI KONTAK`,`PAYMENT`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
