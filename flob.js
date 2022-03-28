@@ -448,7 +448,7 @@ menu =`_Done Kak Orderan Telah Di Terima_
 *📅 Tanggal ⵓ* _${tanggal}_
 
 
-*Done Kak, All TRX No Ref Ya*`
+*Jasjok kontak telah habis, Terima kasih Di tunggu orderan Selanjutnya*`
 reply(menu)
 break
 
@@ -456,96 +456,17 @@ case 'formulir':
 menu =`*${ucapanWaktu} @${sender.split('@')[0]}*
 *Isi Formukir Pembelian Nya Kak*
 
-• 𝗡𝗔𝗠𝗔 :
-• 𝗜𝗗 :
-• 𝗚𝗔𝗠𝗘 :
-• 𝗗𝗜𝗔𝗠𝗢𝗡𝗗 :
-• 𝗣𝗘𝗠𝗕𝗔𝗬𝗔𝗥𝗔𝗡 𝗩𝗜𝗔 :
+• NAMA :
+• SS KONTAK :
+• ORDER LIST :
+• PEMBAYARAN VIA :
 `
 teks =`*Pastikan Format Benar !!*
-*Jika Salah Isi Format Maka Diamond Gak Masuk*
-*Kami tidak akan bertanggung jawab !!*
 *Jika Sudah Selesai Isi Format Harap Kirim Ke Owner !!*
 *Terima kasih*
 
 ${tanggal}`
 flob.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'BAYAR' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
-break
-
-case 'ff':
-case 'diamondfreefire':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `*「 𝗙𝗥𝗘𝗘 𝗙𝗜𝗥𝗘 」*
-
-• 💎18 : 3000
-• `
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'ml':
-case 'diamondmobilelegend':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `*「 𝗠𝗢𝗕𝗜𝗟𝗘 𝗟𝗘𝗚𝗘𝗡𝗗𝗦 」*
-
-Kasih List Sendiri`
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'ucpubg':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `*「 𝗣𝗨𝗕𝗚 」*
-
-Kasih List Sendiri`
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'chip':
-case 'chiphiggs':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `*「 CHIP HIGGS DOMINO 」*
-
-Kasih List Sendiri`
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'sausageman':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `*「 SAUSAGE MAN 」*
-
-Kasih List Sendiri`
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
-break
-
-case 'berber':
-gambar = fs.readFileSync('./media/qris.jpg')
-menunya = `[ 𝗝𝗔𝗦𝗔 𝗦𝗛𝗔𝗥𝗘 ]
-
-Kasih List Sendiri`
-teks =
-`\n*${tanggal}*`
-but = [
-          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
-        sendButImage(from, menunya, teks, gambar, but)
 break
 
 case 'jasjok':
@@ -617,16 +538,9 @@ menunya = `
 ❒ ${prefix}store
 ❒ ${prefix}formulir
 ❒ ${prefix}payment
-❒ ${prefix}berber
 ❒ ${prefix}jasjok
-❒ ${prefix}ff
-❒ ${prefix}ml
-❒ ${prefix}ucpubg
-❒ ${prefix}chiphiggs
-❒ ${prefix}sausageman
 
-
-*｢  𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨  ｣*
+*｢  OWNER 𝗠𝗘𝗡𝗨  ｣*
 
 ❒ ${prefix}upswsticker
 ❒ ${prefix}upswaudio
@@ -638,8 +552,8 @@ menunya = `
 teks =
 `\n*${tanggal}*`
 but = [
-          { buttonId: `${prefix}store`, buttonText: { displayText: 'STORE🛒' }, type: 1 },
-           { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER👤' }, type: 1 }]
+          { buttonId: `${prefix}store`, buttonText: { displayText: 'STORE🛒' }, 
+          { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER👤' }, type: 1 }]
         sendButImage(from, menunya, teks, gambar, but)
 
 case 'owner':
