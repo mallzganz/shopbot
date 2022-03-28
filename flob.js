@@ -466,7 +466,7 @@ teks =`*Pastikan Format Benar !!*
 *Terima kasih*
 
 ${tanggal}`
-flob.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'BAYAR' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+flob.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'BAYAR' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: {'OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
 break
 
 case 'jasjok':
