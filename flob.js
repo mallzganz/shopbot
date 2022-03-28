@@ -552,7 +552,7 @@ menunya = `
 teks =
 `\n*${tanggal}*`
 but = [
-          { buttonId: `${prefix}store`, buttonText: { displayText: 'STORE🛒' }, 
+          { buttonId: `${prefix}store`, buttonText: { displayText: 'STORE🛒' }, type: 1 },
           { buttonId: `${prefix}owner`, buttonText: { displayText: 'OWNER👤' }, type: 1 }]
         sendButImage(from, menunya, teks, gambar, but)
 
