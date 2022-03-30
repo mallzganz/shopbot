@@ -502,6 +502,7 @@ menunya = `*「 𝗣𝗔𝗬𝗠𝗘𝗡𝗧 」*
 *GOPAY : [ SCAN QRIS DI ATAS ]*
 *DANA : [ 081461222085 ]*
 *OVO : [ 081461222085 ]*
+*QRIS : [ bit.ly/3JTLPHp ]*
 *A/N MALLZ STORE*`
 teks =
 `\n*${tanggal}*`
