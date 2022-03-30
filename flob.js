@@ -453,7 +453,8 @@ reply(menu)
 break
 
 case 'formulir':
-menu =`*${ucapanWaktu} @${sender.split('@')[0]}*
+gambar = fs.readFileSync('./media/mallz.jpg')
+menunya =`*${ucapanWaktu} @${sender.split('@')[0]}*
 *Isi Formukir Pembelian Nya Kak*
 
 • NAMA :
@@ -466,18 +467,18 @@ teks =`*Pastikan Format Benar !!*
 *Terima kasih*
 
 ${tanggal}`
-flob.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'BAYAR' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: {'OWNER' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [sender]}}}, 'buttonsMessage')
+but = [
+          { buttonId: `${prefix}payment`, buttonText: { displayText: 'PAYMENT' }, type: 1 }]
+        sendButImage(from, menunya, teks, gambar, but)
 break
-
 case 'jasjok':
 case 'jasajokikontak':
-gambar = fs.readFileSync('./media/qris.jpg')
+gambar = fs.readFileSync('./media/mallz.jpg')
 menunya = `[ *JASA JOKI* ]
 *_LIST VIP_*
 10K : 1 MINGGU
 20K : 2 MINGGU
 30K : 3 MINGGU
-40K : 1 BULAN
 *_LIST DAY_*
 1 DAY : 2K
 2 DAY : 3K
@@ -488,7 +489,7 @@ menunya = `[ *JASA JOKI* ]
 *_NOTE_:*
 - DI LARANG PUSH KONTAK SENDIRI JIKA SUDAH ORDER
 - NO PROTES ENJOY KAN DENGAN PROSES👊
-*LINK GC : https://chat.whatsapp.com/J5ZvPpRW6uoDRubfOc2tk9*`
+LINK GC : https://chat.whatsapp.com/J5ZvPpRW6uoDRubfOc2tk9`
 teks =
 `\n*${tanggal}*`
 but = [
