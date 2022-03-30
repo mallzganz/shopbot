@@ -487,7 +487,9 @@ menunya = `[ *JASA JOKI* ]
     PERMANENT : 70K
 *_NOTE_:*
 - DI LARANG PUSH KONTAK SENDIRI JIKA SUDAH ORDER
-- NO PROTES ENJOY KAN DENGAN PROSES👊`
+- NO PROTES ENJOY KAN DENGAN PROSES👊
+*LINK GC : 
+https://chat.whatsapp.com/J5ZvPpRW6uoDRubfOc2tk9`
 teks =
 `\n*${tanggal}*`
 but = [
